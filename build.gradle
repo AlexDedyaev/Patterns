@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id("io.freefair.lombok") version "8.13.1"
-    id 'com.github.ben-manes.versions' version '0.42.0'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group 'ru.netology'
@@ -21,17 +21,13 @@ repositories {
 }
 
 dependencies {
+
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
-    testImplementation 'org.junit.platform:junit-platform-engine:1.10.0'
-    testImplementation 'org.junit.platform:junit-platform-launcher:1.10.0'
-    implementation 'ch.qos.logback:logback-classic:1.4.14'
-    implementation 'com.github.javafaker:javafaker:1.0.2'
-    implementation 'io.qameta.allure:allure-selenide:2.20.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testImplementation 'com.codeborne:selenide:6.19.0'
-
-    testImplementation 'org.slf4j:slf4j-simple:1.7.32'
-
+    testImplementation 'io.qameta.allure:allure-selenide:2.20.1'// Вспомогательные
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+    //implementation 'ch.qos.logback:logback-classic:1.4.14'
+     implementation 'org.apache.logging.log4j:log4j-slf4j2-impl:2.23.1'
 }
 
 test {
