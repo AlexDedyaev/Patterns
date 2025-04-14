@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id("io.freefair.lombok") version "8.13.1"
     id 'io.qameta.allure' version '2.11.2'
-
 }
 
 group 'ru.netology'
@@ -27,7 +26,7 @@ dependencies {
     testImplementation 'com.codeborne:selenide:6.19.0'
     testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
-    //testImplementation 'ch.qos.logback:logback-classic:1.4.14'
+    //implementation 'ch.qos.logback:logback-classic:1.4.14'
     testImplementation 'org.apache.logging.log4j:log4j-slf4j2-impl:2.23.1'
 }
 
